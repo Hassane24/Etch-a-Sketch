@@ -11,8 +11,8 @@ addDivs();
 
 const divs = document.querySelectorAll(".etch");
 
-divs.forEach(addClass());
-
-function addClass() {
-  divs.addEventListener("mouseover", () => divs.setAttribute("style", "background-color:blue;"), false);
+for (let i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("mouseover", () => {
+    divs[i].classList.add("hovery");
+  });
 }
