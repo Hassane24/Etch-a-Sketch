@@ -1,1 +1,1 @@
-# Etch-a-Sketch
+Etch-a-Sketch Made with grid sprinkled with JS wizardry 
