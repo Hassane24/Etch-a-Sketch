@@ -20,6 +20,8 @@ function addDivs(rows, columns) {
 }
 addDivs();
 
+console.log(container.childNodes);
+
 const divs = document.querySelectorAll(".etch");
 
 for (let i = 0; i < divs.length; i++) {
@@ -30,8 +32,5 @@ for (let i = 0; i < divs.length; i++) {
 
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
-  for (i = 0; i < divs.length; i++) {
-    divs[i].classList.remove("hovery");
-  }
-  addDivs();
+  window.location.reload();
 });
